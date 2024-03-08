@@ -1,0 +1,109 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ahazra.tracklocation"
+4    android:versionCode="1004"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:4:5-67
+11-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+12-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:5:5-88
+12-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:5:22-85
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:6:5-79
+13-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:6:22-76
+14    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+14-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:7:5-85
+14-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:7:22-82
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:8:5-81
+15-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:8:22-78
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:9:5-79
+16-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:9:22-76
+17    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+17-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:10:5-80
+17-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:10:22-77
+18    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+18-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:11:5-74
+18-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:11:22-72
+19    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+19-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:12:5-77
+19-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:12:22-74
+20    <uses-permission android:name="android.permission.WAKE_LOCK" />
+20-->[:react-native-background-timer] E:\TrackLocation\node_modules\react-native-background-timer\android\build\intermediates\library_manifest\release\AndroidManifest.xml:11:5-68
+20-->[:react-native-background-timer] E:\TrackLocation\node_modules\react-native-background-timer\android\build\intermediates\library_manifest\release\AndroidManifest.xml:11:22-65
+21    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+21-->[:react-native-community_netinfo] E:\TrackLocation\node_modules\@react-native-community\netinfo\android\build\intermediates\library_manifest\release\AndroidManifest.xml:10:5-76
+21-->[:react-native-community_netinfo] E:\TrackLocation\node_modules\@react-native-community\netinfo\android\build\intermediates\library_manifest\release\AndroidManifest.xml:10:22-73
+22
+23    <application
+23-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:14:5-44:19
+24        android:name="com.ahazra.tracklocation.MainApplication"
+24-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:15:7-38
+25        android:allowBackup="false"
+25-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:19:7-34
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.8.0] C:\Users\Anirban Hazra\.gradle\caches\transforms-2\files-2.1\8bab233f672ffd45ac57596fd518001d\core-1.8.0\AndroidManifest.xml:24:18-86
+27        android:icon="@mipmap/ic_launcher"
+27-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:17:7-41
+28        android:label="@string/app_name"
+28-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:16:7-39
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:18:7-52
+30        android:theme="@style/AppTheme" >
+30-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:21:7-38
+31        <activity
+31-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:22:7-35:18
+32            android:name="com.ahazra.tracklocation.SplashActivity"
+32-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:23:9-39
+33            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+33-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:26:9-86
+34            android:exported="true"
+34-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:30:9-32
+35            android:label="@string/app_name"
+35-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:25:9-41
+36            android:launchMode="singleTask"
+36-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:27:9-40
+37            android:screenOrientation="portrait"
+37-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:28:9-45
+38            android:theme="@style/SplashTheme"
+38-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:24:9-43
+39            android:windowSoftInputMode="adjustResize" >
+39-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:29:9-51
+40            <intent-filter>
+40-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:31:9-34:25
+41                <action android:name="android.intent.action.MAIN" />
+41-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:32:13-65
+41-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:32:21-62
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:33:13-73
+43-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:33:23-70
+44            </intent-filter>
+45        </activity>
+46        <activity
+46-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:36:7-43:18
+47            android:name="com.ahazra.tracklocation.MainActivity"
+47-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:37:9-37
+48            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+48-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:39:9-86
+49            android:exported="true"
+49-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:42:9-32
+50            android:label="@string/app_name"
+50-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:38:9-41
+51            android:launchMode="singleTask"
+51-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:40:9-40
+52            android:windowSoftInputMode="adjustResize" >
+52-->E:\TrackLocation\android\app\src\main\AndroidManifest.xml:41:9-51
+53        </activity>
+54    </application>
+55
+56</manifest>

@@ -1,0 +1,11 @@
+com/kkr2022/MainApplication.java
+ com.ahazra.tracklocation.MainApplication
+ com.ahazra.tracklocation.MainApplication$1
+com/kkr2022/SplashActivity.java
+ com.ahazra.tracklocation.SplashActivity
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/ahazra/tracklocation/BuildConfig.java
+ com.ahazra.tracklocation.BuildConfig
+com/kkr2022/MainActivity.java
+ com.ahazra.tracklocation.MainActivity

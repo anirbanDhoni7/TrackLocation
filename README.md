@@ -45,6 +45,7 @@ To show tracking routes in Google Maps, @react-native-maps/polyline-direction th
 3. Background or Lock Screen Location Tracking is done by react-native-background-timer package 
 4. Current location is found by react-native-get-location package 
 5. Hard Coded Login Authentication is obtained by the combination of @react-native-async-storage/async-storage package and React Context API
+6. As I have no API to update tracked location details in a server, I have implemented the process of background tracking acknowledgement section in terms of WhatsApp message sending - just user need to provide his/her WhatsApp Contact Details to get background tracking location - Code is written in Line No. 64 of src\screens\CheckInScreen.js path
 
 # User Credentials for Login 
 1. Username - test1@mailinator.com, Password - 123456

@@ -7,7 +7,7 @@
 For Environment Setup of React Native, please go through https://reactnative.dev/docs/environment-setup?guide=native this link 
 
 # PROJECT SETUP 
-1. Clone or Download ZIP the project from https://github.com/anirbanDhoni7/TrackLocation this repository 
+1. Clone the project or Download ZIP from https://github.com/anirbanDhoni7/TrackLocation this repository 
 2. Run "npm i"/"npm install" at terminal of project directory 
 3. Navigate to node_modules/react-native-screens/android/build.gradle file and do the following -
 dependencies {

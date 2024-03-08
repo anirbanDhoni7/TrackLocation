@@ -1,36 +1,55 @@
-# Solution of "Android build failed: Can't determine type for tag '<macro name="m3_comp_assist_chip_container_shape">?attr/shapeAppearanceCornerSmall</macro>'"
+# System Requirement
+1. Android Studio 
+2. Java-11 or JDK-11 
+3. Node JS Version 12 and above (Version 12 or 14 will be preferred)
+4. Minimum Compile SDK should be 33 (Android-13)
+5. ADB Driver (For Debugging in real device)
+6. React Native Setup 
+For Environment Setup of React Native, please go through https://reactnative.dev/docs/environment-setup?guide=native this link 
 
-go to node_modules/react-native-screens/android/build.gradle file and
-
+# PROJECT SETUP 
+1. Clone or Download ZIP the project from https://github.com/anirbanDhoni7/TrackLocation this repository 
+2. Run "npm i"/"npm install" at terminal of project directory 
+3. Navigate to node_modules/react-native-screens/android/build.gradle file and do the following -
 dependencies {
 ...
 implementation 'com.google.android.material:material:1.9.0' => 1.6.0 (change version)
 ...
 }
+Reference → https://github.com/stripe/stripe-react-native/issues/1471
+4. Update JDK-11 path of the concerned system as the value of "org.gradle.java.home" (in Line No. 31) in android\gradle.properties this file (Please note, suppose your folder path is "E:\Java11", then please write "E:\\Java11" here)
+5. Run "npx react-native run-android" at terminal of root directory to run the project 
 
-https://github.com/stripe/stripe-react-native/issues/1471
+# APK GENERATION COMMAND 
+cd android && ./gradlew assembleRelease (in project terminal)
 
-# Google Ads Integration Minimum Requirement 
-1. Java-11 or JDK-11 Installed in system 
-2. Minimum Compile SDK should be 33 (Android-13)
+# BUNDLE GENERATION COMMAND 
+cd android && ./gradlew bundleRelease (in project terminal)
 
+# APK STORAGE FOLDER LINK IN GITHUB 
+https://github.com/anirbanDhoni7/TrackLocation/tree/master/android/app/build/outputs/apk/release
+Download the APK, suitable according to your device architechture, from the above link 
 
-# Get Address Name from Latitude and Longitudes
+# ASSIGNMENT DETAILS 
+1. Email/Password Login Authentication set up using few demo credentials, set at only app end - Credentials are given below and those are hard coded in Line No. 33 of App.js file - because of absence of any specific Login API, I could not able to set up login-signup conventional flow 
+2. Latitude, Longitude & Check in date time will be shown at the app end but because of the lack of Google Maps Paid API Key, Google Address and map plotting could not be done 
+
+To get Google Address of a specific latitude-longitude pair, following Google API need to be called :- 
+
 fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + myLat + ',' + myLon + '&key=' + myApiKey)
         .then((response) => response.json())
         .then((responseJson) => {
-            console.log('ADDRESS GEOCODE is BACK!! => ' + JSON.stringify(responseJson));
+            console.log('Google Address Details => ' + JSON.stringify(responseJson));
 })
 
-# Update JDK 
-First Step you should install https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
+To show tracking routes in Google Maps, @react-native-maps/polyline-direction this package can be used with a Paid Google Maps API Key. 
+3. Background or Lock Screen Location Tracking is done by react-native-background-timer package 
+4. Current location is found by react-native-get-location package 
+5. Hard Coded Login Authentication is obtained by the combination of @react-native-async-storage/async-storage package and React Context API
 
-make sure you install it on the same folder as where the OpenJDK's installed before, mine installed on C:\Program Files\OpenJDK, you can check it on the next step.
-
-Then go search Edit the system environment variables Edit the system environment variables
-
-Click On Environment Variables 2
-
-then change the JAVA_HOME Value location to your JDK 11's Folder you installed before 3
-
-Save it and restart you PC
+# User Credentials for Login 
+1. Username - test1@mailinator.com, Password - 123456
+2. Username - test2@mailinator.com, Password - 123456
+3. Username - test3@mailinator.com, Password - 123456
+4. Username - test4@mailinator.com, Password - 123456
+5. Username - test5@mailinator.com, Password - 123456

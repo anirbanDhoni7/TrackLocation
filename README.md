@@ -16,7 +16,7 @@ implementation 'com.google.android.material:material:1.9.0' => 1.6.0 (change ver
 ...
 }
 Reference → https://github.com/stripe/stripe-react-native/issues/1471
-4. Update JDK-11 path of the concerned system as the value of "org.gradle.java.home" (in Line No. 31) in android\gradle.properties this file (Please note, suppose your folder path is "E:\Java11", then please write "E:\\Java11" here)
+4. Update JDK-11 path of the concerned system as the value of "org.gradle.java.home" (in Line No. 31) in android\gradle.properties this file (Please note, suppose your folder path is "E:\Java11", then please write "E:\\\Java11" here)
 5. Run "npx react-native run-android" at terminal of root directory to run the project 
 
 # APK GENERATION COMMAND 

@@ -59,6 +59,16 @@ class CheckInScreen extends React.Component {
                     longitude: location.longitude,
                     dateTime: new Date().toDateString() + " " + new Date().toTimeString()
                 }
+            }, () => {
+
+                Linking.openURL(
+                    'https://wa.me/' +
+                    this.state.countryCode + '' +
+                    this.state.whatsAppNumber + '?text=' +
+                    'Latitude' + this.state.checkInLocation.latitude +
+                    'Longitude' + this.state.checkInLocation.longitude +
+                    'DateAndTime' + this.state.checkInLocation.dateTime
+                );
             })
         })
         .catch(err => {
@@ -69,14 +79,6 @@ class CheckInScreen extends React.Component {
         });
 
         console.log('check in location ', this.state.checkInLocation);
-        Linking.openURL(
-            'https://wa.me/' + 
-            this.state.countryCode + '' + 
-            this.state.whatsAppNumber + '?text=' + 
-            'Latitude' + this.state.checkInLocation.latitude + 
-            'Longitude' + this.state.checkInLocation.longitude + 
-            'DateAndTime' + this.state.checkInLocation.dateTime
-        );
         this.timeout && clearTimeout(this.timeout);
         this.timeout = setTimeout(() => {
             this.checkIn();

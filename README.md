@@ -2,9 +2,8 @@
 1. Android Studio 
 2. Java-11 or JDK-11 
 3. Node JS Version 12 and above (Version 12 or 14 will be preferred)
-4. Minimum Compile SDK should be 33 (Android-13)
-5. ADB Driver (For Debugging in real device)
-6. React Native Setup 
+4. ADB Driver (For Debugging in real device)
+5. React Native Setup 
 For Environment Setup of React Native, please go through https://reactnative.dev/docs/environment-setup?guide=native this link 
 
 # PROJECT SETUP 
